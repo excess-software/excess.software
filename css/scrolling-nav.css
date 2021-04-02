@@ -23,9 +23,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.card{
-  border: none !important;
-}
 
 .bg-black{
   background-color: black;
@@ -46,6 +43,25 @@ html { font-family: 'Inter', sans-serif; }
   max-width: 130px;
 }
 
+.slide {
+  width: 100%; 
+  height: auto;
+}
+
+.carousel-caption {
+  background-color: #007bff;
+  width: 30%;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.carousel-caption a {
+  color: white;
+}
+
+
 /*animation*/
 .char {
   font-size: 40px;
@@ -63,5 +79,19 @@ html { font-family: 'Inter', sans-serif; }
   to {
     opacity: 1;
     transform: perspective(500px) translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-item p{
+    display: none;
+  }
+
+  .carousel-item h3{
+    font-size: 12px;
+  }
+
+  .carousel-item a{
+    font-size: 10px;
   }
 }
