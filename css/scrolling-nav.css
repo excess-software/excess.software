@@ -7,6 +7,10 @@ header {
   padding: 156px 0 70px;
 }
 
+h2 {
+  font-weight: 700;
+}
+
 section {
   padding: 80px 0;
 }
@@ -23,6 +27,33 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.display-4 {
+  font-weight: 700;
+}
+
+.fa-bootstrap {
+  color: #7952b3;
+}
+
+.fa-react {
+  color: #61dafb;
+}
+
+.fa-node {
+  color: #72a962;
+}
+
+.fa-laravel {
+  color: #ff2d20;
+}
+
+.fa-digital-ocean {
+  color: #0069ff;
+}
+
+.card-title {
+  font-weight:700;
+}
 
 .bg-black{
   background-color: black;
