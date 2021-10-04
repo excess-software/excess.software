@@ -11,6 +11,10 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-weight: 700;
+}
+
 section {
   padding: 80px 0;
 }
@@ -25,6 +29,10 @@ section {
 
 body {
   font-family: 'Inter', sans-serif;
+}
+
+.chevron {
+  font-size: 20px;
 }
 
 .display-4 {
@@ -160,6 +168,18 @@ html { font-family: 'Inter', sans-serif; }
   margin-top: -6px;
 }
 
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  margin-top: -8px;
+}
+
 
 @-webkit-keyframes mouse-scroll {
 
@@ -222,3 +242,10 @@ html { font-family: 'Inter', sans-serif; }
   }
 }
 
+@media only screen and (min-width: 960px) {
+  .contact-separator {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #c4c4c4;
+  }
+}

@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Excess software - Development made simple</title>
+  <title>excess software - Development made simple</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,6 +37,34 @@
     });
   </script>
 
+  <!-- Messenger plugin de chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your plugin de chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "113183360855355");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v12.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
 </head>
 
 <body id="page-top">
@@ -46,15 +74,24 @@
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="logo-img" src="images/excess-logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><i class="fas fa-bars"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="web-app-development.html">Services</a>
+            <a class="nav-link js-scroll-trigger active" href="web-app-development.html"><b>Services</b></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item contact-separator">
             <a class="nav-link js-scroll-trigger" href="https://calendly.com/excess-software/30min" target="_blank">Contact</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link js-scroll-trigger" href="" target="_blank">ES</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link js-scroll-trigger" href="" target="_blank"><b>EN</b></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link js-scroll-trigger" href="" target="_blank"><i class="fas fa-moon"></i></a>
           </li>
         </ul>
       </div>
@@ -74,6 +111,7 @@
         <div>
           <span class="m_scroll_arrows unu"></span>
           <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
         </div>
       </div>
     </div>
@@ -93,36 +131,36 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/tzenik.svg" class="slide" alt="Los Angeles">
+                <img src="images/tzenik.svg" class="slide" alt="e-learning">
                 <div class="carousel-caption">
-                  <h3>Tzenik Learning</h3>
+                  <h3>tzenik.com</h3>
                   <p>The e-learning platform that breaks down accesibility barriers.</p>
-                  <a class="" href="web-app-development.html" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming soon">Learn more »</a>
+                  <a class="" target="_blank" href="https://tzenik.com" role="button" >Learn more <i class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/mrpbase.svg" class="slide" alt="Chicago">
+                <img src="images/mrpbase.svg" class="slide" alt="mrp-software">
                 <div class="carousel-caption">
-                  <h3>MRPBase</h3>
+                  <h3>mrpbase.com</h3>
                   <p>Better technology for a new generation of production and manufacturing.</p>
-                  <a class="" href="web-app-development.html" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming soon">Learn more »</a>
+                  <a class="" target="_blank" href="http://www.mrpbase.com/" role="button">Learn more <i class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/um.svg" class="slide" alt="New York">
+                <img src="images/um.svg" class="slide" alt="health-tech">
                 <div class="carousel-caption">
                   <h3>Urgencias Médicas</h3>
                   <p>Creating the future of telemedicine services in Guatemala.</p>
-                  <a class="" href="web-app-development.html" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming soon">Learn more »</a>
+                  <a class="" target="_blank" href="https://play.google.com/store/apps/details?id=com.colaboradores.seguroscolumna&hl=en" role="button">Learn more <i class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+              <span class="text-secondary chevron"><i class="fas fa-chevron-left"></i></span>
             </a>
             <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
+              <span class="text-secondary chevron"><i class="fas fa-chevron-right"></i></span>
             </a>
           </div>
         </div>
@@ -349,11 +387,11 @@
             </ul>
           </div>
           <div class="col-md-3 col-sm-12">
-            <h5>Case Studies</h5>
+            <h5>Recent Projects</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="link-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming soon">Healthcare</a></li>
-              <li><a class="link-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming soon">E-Learning</a></li>
-              <li><a class="link-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming soon">Manufacturing</a></li>
+              <li><a class="link-secondary" target="_blank" href="http://mrpbase.com">mrpbase.com <i class="fas fa-external-link-alt"></i></a></li>
+              <li><a class="link-secondary" target="_blank" href="https://tzenik.com">tzenik.com <i class="fas fa-external-link-alt"></i></a></li>
+              <li><a class="link-secondary" target="_blank" href="https://play.google.com/store/apps/details?id=com.colaboradores.seguroscolumna&hl=en">Urgencias Médicas <i class="fas fa-external-link-alt"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-12">
