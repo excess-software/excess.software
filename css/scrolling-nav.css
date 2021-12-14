@@ -63,6 +63,14 @@ body {
   font-weight:700;
 }
 
+.card-header {
+  Border-bottom: none;
+}
+
+.card {
+  border: none;
+}
+
 .bg-black{
   background-color: black;
 }
